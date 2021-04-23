@@ -13,7 +13,7 @@ int foo(int n)
     }
     if(n%2==1 && n>0)
     {
-        return 2 * foo(n-1) - n;
+        return 2 * foo(2*n) - n;
     }
 }
 
