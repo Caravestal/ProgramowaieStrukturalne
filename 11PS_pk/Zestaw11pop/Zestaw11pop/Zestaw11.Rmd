@@ -1,0 +1,49 @@
+---
+title: "Zestaw 11"
+lang: pl
+output:
+  word_document: default
+  pdf_document: default
+---
+
+
+1. W folderze Debug11 znajduje się projekt z kodem w języku C. W pliku main.c w niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu.
+
+*Punktacja: 1 pkt za każdą poprawną linijkę, łącznie 8 pkt.*
+
+2. Napisz funkcję, która jako argument otrzymuje dodatnią liczbę całkowitą $n$ i zwraca liczbę równą sumie liczb naturalnych nieparzystych mniejszych niż $n$. Nie korzystaj z żadnych gotowych funkcji bibliotecznych ani wbudowanych. Stwórz dwa przypadki testowe dla funkcji.
+
+Przypadki testowe:
+
+| $n$ | wyjście|
+|---|---|
+| 1 | 0 |
+| 5 | 4 |
+| 12 | 36 |
+
+*Punktacja: 8 pkt.*
+
+3. Napisz bezargumentową funkcję, która rezerwuje miejsce w pamięci na dwie zmienne typu `float`, wpisuje do nich odpowiednio wartości 2.8 i 3.2 oraz zwraca wskaźnik na drugą ze zmiennych. Stwórz przypadek testowy dla funkcji.
+
+*Punktacja: 9 pkt.*
+
+4. Napisz funkcję rekurencyjną, która dla otrzymanej w argumencie nieujemnej liczby całkowitej $n$ zwraca
+wartość elementu o indeksie $n$ ciągu zdefiniowanego w następujący sposób
+
+$$a_0=a_1=1$$
+
+$$a_n=a_{n-2}+\frac{1}{a_{n-1}}$$
+Stwórz dwa przypadki testowe dla funkcji.
+
+Przypadki testowe:
+
+| $n$ | $a_n$ |
+|---|---|
+| 2 | 2 |
+| 4 | $2\frac{2}{3} \approx 2.6667$ |
+
+*Punktacja: 10 pkt.*
+
+5. Napisz funkcje porównująca dwie tablice jednowymiarowe o takich samych rozmiarach o wartościach typu `float`. Funkcja ma zwrócić 1, gdy elementy w obu tablicach są "równe", a 0 w przeciwnym wypadku. Przyjmij, że dwa elementy typu `float` są "równe", jeśli wartość bezwzględna ich różnicy jest mniejsza lub równa 0.1. Stwórz dwa przypadki testowe dla funkcji.
+
+*Punktacja: 10 pkt. Extra 5 pkt za użycie w rozwiązaniu samych wskaźników (o ile jest poprawne).*
