@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void foo(int n, int m)
+void foo(int *n, int *m)
 {
-    int z = n;
-    n = m;
-    m = z;
-    printf("%i %i", n, m);
+    int z = *n;
+    *n = *m;
+    *m = z;
 }
 
 int main()
 {
+    int n;
+    int m;
     printf("Podaj n i m:\n");
-    unsigned int n,m;
     scanf("%i%i",&n,&m);
-    int a = 2;
-    int b = 3;
-    foo(a,b);
+    foo(&n,&m);
+    printf("%d\n", n);
+    printf("%d\n", m);
     return 0;
 }
