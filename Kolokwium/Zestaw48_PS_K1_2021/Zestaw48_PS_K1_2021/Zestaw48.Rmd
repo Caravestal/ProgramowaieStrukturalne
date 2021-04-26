@@ -1,0 +1,45 @@
+---
+title: "Programowanie strukturalne - Kolokwium 1 - Zestaw 48"
+lang: pl
+output:
+  word_document: default
+  pdf_document: default
+---
+
+**Każde zadanie powinno być w oddzielnym pliku. Rozwiązanie umieść 
+na swoim indywidualnym repozytorium na Githubie (pojedyncze pliki) lub prześlij jako archiwum zip
+poprzez wiadomość prywatną na MS Teams.** 
+
+1. W folderze Debug48 znajduje się projekt z kodem w języku C.
+W pliku main.c w niektórych linijkach są komentarze. 
+Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu.
+
+*Punktacja: 1 pkt za każdą poprawną linijkę, łącznie 8 pkt.*
+
+2. Napisz funkcję, której argumentem jest dodatnia liczba całkowita $n$. Funkcja ma zwracać sumę:
+
+$$\frac{1}{2}+\frac{2}{3}+\frac{3}{4}+\ldots+\frac{n}{n+1}.$$
+
+Stwórz przypadek testowy.
+
+*Punktacja: 9 pkt.*
+
+3. Napisz funkcję `foo`, która ma dwa argumenty. Pierwszym argumentem jest stały wskaźnik `wsk1` na zmienną typu `double`, drugim argumentem wskaźnik `wsk2` na stałą wartość typu `double`. Funkcja `foo` ma zwrócić iloczyn wartości wskazywanych przez argumenty funkcji. Stwórz dwa przypadki testowe.
+
+*Punktacja: 10 pkt.*
+
+4. Napisz funkcję rekurencyjną, która dla otrzymanej w argumentach
+pary nieujemnych liczb całkowitych $n$ i $m$ zwraca wartość $f(n,m)$
+gdzie funkcja $f$ jest zdefiniowana w następujący sposób:
+
+$$f(0,m)=2m$$
+$$f(n,m)=f(m,n)+1$$
+$$f(n,m)=f(m-1,n-1)+m-n \text{ dla } n\geqslant m >0$$
+Stwórz dwa przypadki testowe.
+
+*Punktacja: 11 pkt.*
+
+5. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą
+$n$ oraz $2n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić wskaźnik do pierwszego parzystego elementu w tablicy. W przypadku braku takich elementów, funkcja ma zwrócić wskaźnik na początkowy element. Stwórz dwa przypadki testowe dla funkcji.
+
+*Punktacja: 12 pkt o ile rozwiązanie korzysta tylko ze wskaźników. 6 pkt za rozwiązanie mieszane lub tylko w notacji tablicowej.*
